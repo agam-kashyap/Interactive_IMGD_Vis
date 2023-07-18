@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<link rel="stylesheet" href="./css/global.css">
+	<script src="js/m3.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  	<script src="./js/lib/papaparse.min.js"></script>
+	<script src="https://kit.fontawesome.com/17b1461090.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="overlay">
+		<div>Zoom : <span id="zoomVal"></span></div>
+		<div>DataType : <span id="dataType"></span></div>
+		<div>Filename : <span id="fileName"></span></div>
+	</div>
+	<div class="window">
+		<div id="tool">
+			<button id="screenshot"><i class='fas fa-download' ></i></button>
+			<button id="resetScale" type="button"><i class='fas fa-home'></i></button>
+		</div>
+		<div class="inputButtons">
+			<form id="fileForm">
+				<input type="file" id="csvFile" accept=".csv,.txt" />
+				<div id="fileName"></div>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+	<div class="window1"></div>
+</body>
+<script type="module" src="./js/index.js"></script>
+</html>

@@ -1,0 +1,44 @@
+body {
+    background-color: #f5f5f5;
+    overflow: hidden;
+    margin: auto;
+    align-items: center;
+  }
+
+#overlay {
+  position: absolute;
+  left: 80%;
+  top: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-family: monospace;
+  padding: 1em;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  display: block;
+}
+
+.window {
+flex: 1;
+border: 2px solid yellow;
+display: flex;
+margin-left: 20vw;
+margin-right: 35vw;
+}
+
+
+.window > *{
+margin: 10px;
+}
+form {
+display: flex;
+}
+
+.window1 {
+  margin-left: 20vw;
+}
